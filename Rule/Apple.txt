@@ -1,0 +1,6 @@
+icloud.com
+apple.com
+itunes.com
+itunes.apple.com
+mzstatic.com
+cdn.apple-cloudkit.com
