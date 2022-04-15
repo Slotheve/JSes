@@ -4,3 +4,4 @@ DOMAIN-SUFFIX,itunes.com
 DOMAIN-SUFFIX,itunes.apple.com
 DOMAIN-SUFFIX,mzstatic.com
 DOMAIN-SUFFIX,cdn.apple-cloudkit.com
+DOMAIN-SUFFIX,icloud-content.com
