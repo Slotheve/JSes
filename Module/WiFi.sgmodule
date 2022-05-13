@@ -1,0 +1,6 @@
+#!name=自动切换
+#!desc=WiFi自动切换
+#!system=ios
+
+[Script]
+自动切换 = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/Slotheve/Surge/master/Module/WiFi.js
