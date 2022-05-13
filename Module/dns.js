@@ -18,10 +18,10 @@ const switchModule = (enable_module, disable_module) => {
 }
 
 getModuleStatus().then((module_status) => {
-  if (home && (module_status[0] || !module_status[1])) {
+  if (home && (!module_status[0] || module_status[1])) {
     $notification.post('关 DNS模块', '', '')
     switchModule(DNS);
-  } else if (!home && (!module_status[0] || module_status[1])) {
+  } else if (!home && (module_status[0] || !module_status[1])) {
     $notification.post('开 DNS模块', '', '')
     switchModule(DNS);
   } else {
