@@ -5,11 +5,13 @@ if (wifiChanged()) {
   const mode = WIFI_DONT_NEED_PROXYS.includes($network.wifi.ssid)
     ? 'direct'
     : 'rule';
+  const 模式 = WIFI_DONT_NEED_PROXYS.includes($network.wifi.ssid)
+    ? '直连'
+	: '规则';
   $surge.setOutboundMode(mode);
   $notification.post(
     'Surge',
-    `Wi-Fi changed to ${$network.wifi.ssid || 'cellular'}`,
-    `use ${mode} mode`
+    `已切换 ${模式} 模式`
   );
 }
 
