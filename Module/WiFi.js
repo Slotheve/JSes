@@ -9,11 +9,7 @@ if (wifiChanged()) {
     ? '直连'
 	: '规则';
   $surge.setOutboundMode(mode);
-  $notification.post(
-    'Surge',
-    `切换通知`,
-    `出站 → ${模式}`
-  );
+  $notification.post('出站 → ${模式}', '', '');
 }
 
 function wifiChanged() {

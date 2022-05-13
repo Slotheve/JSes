@@ -1,26 +1,30 @@
-const ssid1 = "Slotheve-5G";
-const ssid2 = "Slotheve-2.4G";
-const name = "WiFi-DNS";
-let home = ($network.wifi.ssid === ssid1) || ($network.wifi.ssid === ssid2);
-
-const getModuleStatus = new Promise((resolve) => {
-  $httpAPI("GET", "v1/modules", null, (data) => {
-        resolve(data.enabled.includes(name));
+const DNS = 'WiFi-DNS';
+const home = $network.wifi.ssid === 'Slotheve-5G' || $network.wifi.ssid === 'Slotheve-2.4G';
+ 
+function getModuleStatus() {
+  return new Promise((resolve) => {
+    $httpAPI('GET', 'v1/modules', null, (data) => {
+      let enabled = data.enabled;
+      resolve(enabled.includes(DNS));
+    });
   });
-});
-
-getModuleStatus.then((enabled) => {
-  if (home && enabled) {
-	$notification.post(`关 ${name} 模块`, "" ,"");
-	enableModule(false);
-  } else if (!home && !enabled) {
-	$notification.post(`开 ${name} 模块`, "" ,"");
-	enableModule(true);
-  } else {
-	$done({});
-  }
-});
-
-function enableModule(status) {
-  $httpAPI("POST", "v1/modules", { [name]: status }, () => $done());
 }
+ 
+const switchModule = (enable_module, disable_module) => {
+  $httpAPI('POST', 'v1/modules', {
+    [enable_module]: true,
+    [disable_module]: false,
+  }, () => $done());
+}
+
+getModuleStatus().then((module_status) => {
+  if (home && (module_status[0] || !module_status[1])) {
+    $notification.post('关 DNS模块', '', '')
+    switchModule(DNS);
+  } else if (!home && (!module_status[0] || module_status[1])) {
+    $notification.post('开 DNS模块', '', '')
+    switchModule(DNS);
+  } else {
+    $done();
+  }
+})
