@@ -11,10 +11,10 @@ const getModuleStatus = new Promise((resolve) => {
 
 getModuleStatus.then((enabled) => {
   if (home && enabled) {
-	$notification.post(`开 ${name} 模块`, "" ,"");
+	$notification.post(`关 ${name} 模块`, "" ,"");
 	enableModule(false);
   } else if (!home && !enabled) {
-	$notification.post(`关 ${name} 模块`, "" ,"");
+	$notification.post(`开 ${name} 模块`, "" ,"");
 	enableModule(true);
   } else {
 	$done({});
