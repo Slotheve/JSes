@@ -16,7 +16,7 @@ getModuleStatus.then((enabled) => {
     $notification.post("Event", `关闭${name}模块`, "");
     enableModule(false);
   } else {
-    $done();
+    $done({});
   }
 });
 
