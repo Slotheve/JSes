@@ -1,5 +1,5 @@
 const ssid = "Slotheve-5G";
-const name = "切换DNS";
+const name = "DNS";
 let home = $network.wifi.ssid === ssid;
 
 const getModuleStatus = new Promise((resolve) => {
