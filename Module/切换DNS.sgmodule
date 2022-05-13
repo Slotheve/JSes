@@ -1,6 +1,5 @@
 #!name=DNS
 #!desc=切换DNS
-#!system=ios
 
 [General]
 dns-server = system
