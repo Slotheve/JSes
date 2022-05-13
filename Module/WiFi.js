@@ -10,8 +10,9 @@ if (wifiChanged()) {
 	: '规则';
   $surge.setOutboundMode(mode);
   $notification.post(
-    `Surge`,
-    `已切换 ${模式} 模式`
+    'Surge',
+	`切换通知`,
+    `出站 → ${模式}`
   );
 }
 
