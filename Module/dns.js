@@ -4,9 +4,10 @@ const name = "WiFi-DNS";
 let home = ($network.wifi.ssid === ssid1) || ($network.wifi.ssid === ssid2);
 
 const getModuleStatus = new Promise((resolve) => {
-  $httpAPI("GET", "v1/modules", null, (data) =>
+  $httpAPI("GET", "v1/modules", null, (data) => {
+      let enabled = data.enabled;
 	  resolve(enabled.includes(name))
-  );
+  });
 });
 
 getModuleStatus.then((enabled) => {
