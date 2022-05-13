@@ -7,9 +7,9 @@ if (wifiChanged()) {
     : 'rule';
   const 模式 = WIFI_DONT_NEED_PROXYS.includes($network.wifi.ssid)
     ? '直连'
-	: '规则';
+    : '规则';
   $surge.setOutboundMode(mode);
-  $notification.post('出站 → ${模式}', '', '');
+  $notification.post(`出站 → ${模式}`, ``, ``);
 }
 
 function wifiChanged() {
