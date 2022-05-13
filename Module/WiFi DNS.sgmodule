@@ -1,5 +1,5 @@
-#!name=DNS
-#!desc=切换DNS
+#!name=WiFi DNS
+#!desc=WiFi DNS
 
 [General]
 dns-server = system
