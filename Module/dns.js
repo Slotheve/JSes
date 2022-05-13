@@ -5,7 +5,7 @@ let home = ($network.wifi.ssid === ssid1) || ($network.wifi.ssid === ssid2);
 
 const getModuleStatus = new Promise((resolve) => {
   $httpAPI("GET", "v1/modules", null, (data) =>
-	  resolve(data.enabled.includes(name))
+	  resolve(enabled.includes(name))
   );
 });
 
