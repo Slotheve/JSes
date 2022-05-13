@@ -4,4 +4,4 @@
 
 [Script]
 WiFi = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/Slotheve/Surge/master/Module/WiFi.js
-DNS = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/Slotheve/Surge/master/Module/dns.js
+DNS = type=DNS,script-path=https://raw.githubusercontent.com/Slotheve/Surge/master/Module/dns.js
