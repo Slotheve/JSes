@@ -1,0 +1,6 @@
+#!name=自动切换
+#!desc=WiFi自动切换DNS和出站规则
+#!system=ios
+
+[General]
+dns-server = system
