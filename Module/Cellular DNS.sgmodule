@@ -1,5 +1,0 @@
-#!name=Cellular DNS
-#!desc=Cellular DNS
-
-[General]
-dns-server = 119.29.29.29, 223.5.5.5

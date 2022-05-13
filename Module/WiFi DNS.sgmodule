@@ -1,5 +1,0 @@
-#!name=WiFi DNS
-#!desc=WiFi DNS
-
-[General]
-dns-server = system
