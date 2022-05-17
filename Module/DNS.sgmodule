@@ -1,5 +1,6 @@
-#!name=WiFi-DNS
+#!name=DNS
 #!desc=切换dns
 
 [General]
-dns-server = system
+dns-server = 119.29.29.29
+doh-server = https://doh.pub/dns-query
