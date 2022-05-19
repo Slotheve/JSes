@@ -2,5 +2,4 @@
 #!desc=切换dns
 
 [General]
-dns-server = 119.29.29.29
-doh-server = https://dns.adguard.com/dns-query
+dns-server = 119.29.29.29, 8.8.8.8
