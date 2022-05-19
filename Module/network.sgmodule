@@ -1,0 +1,10 @@
+#!name=Net Panel
+#!desc=网络信息面板
+
+[Panel]
+# 网络信息面板
+net-info-panel=title="网络状态",content="请刷新",style=info,script-name=net-info-panel
+
+[Script]
+# 网络信息面板
+net-info-panel=script-path=https://raw.githubusercontent.com/Slotheve/Surge/main/Module/network.js,type=generic
