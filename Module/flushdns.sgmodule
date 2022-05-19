@@ -1,5 +1,5 @@
-#!name=Panel
-#!desc=自用Panel收集
+#!name=Flush DNS
+#!desc=刷新dns
 
 [Panel]
 # 刷新DNS
