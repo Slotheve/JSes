@@ -1,0 +1,10 @@
+#!name=Panel
+#!desc=自用Panel收集
+
+[Panel]
+# 刷新DNS
+flushDNS = script-name=flushDNS,update-interval=600
+
+[Script]
+# 刷新DNS
+flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.clockwise&color=#3d3d5b&server=false
