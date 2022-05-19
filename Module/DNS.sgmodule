@@ -3,4 +3,4 @@
 
 [General]
 dns-server = 119.29.29.29
-doh-server = https://doh.pub/dns-query
+doh-server = https://dns.adguard.com/dns-query
