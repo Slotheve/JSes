@@ -13,6 +13,4 @@ DOMAIN-SUFFIX,paypal.com
 DOMAIN-SUFFIX,paypal.me
 DOMAIN-SUFFIX,paypalobjects.com
 #Custom
-DOMAIN-SUFFIX,msftncsi.com
 DOMAIN-SUFFIX,agemys.com
-DOMAIN-SUFFIX,ubistatic3-a.akamaihd.net
