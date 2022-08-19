@@ -2,10 +2,6 @@
 #!desc=懒人规则模块
 #!system=ios
 
-[Proxy Group]
-代理 = select, no-alert=0, hidden=0, include-all-proxies=1
-苹果 = select, 代理, DIRECT, no-alert=0, hidden=0, include-all-proxies=0
-
 [Rule]
 DOMAIN-SUFFIX,icloud.com,苹果
 DOMAIN-SUFFIX,apple.com,苹果
