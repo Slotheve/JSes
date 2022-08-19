@@ -1,5 +1,5 @@
-#!name=规则和策略组
-#!desc=懒人规则和策略组模块
+#!name=规则组
+#!desc=懒人规则模块
 #!system=ios
 
 [Proxy Group]
@@ -22,14 +22,12 @@ DOMAIN-SUFFIX,cdn-apple.com,苹果
 DOMAIN-SUFFIX,applemx-icloud.com,苹果
 DOMAIN-SUFFIX,aaplimg.com,苹果
 DOMAIN-SUFFIX,apple.com.edgekey.net,苹果
-DOMAIN,store.apple.com.edgekey.net.globalredir.akadns.net,苹果
 URL-REGEX,^a[1-5]\.mzstatic\.com,苹果
 URL-REGEX,^cdn(-cn)?[1-4]?\.apple-mapkit\.com,苹果
 URL-REGEX,^cl[1-5]-cdn\.origin-apple\.com\.akadns\.net,苹果
 URL-REGEX,^cl[1-5]\.apple\.com,苹果
 URL-REGEX,^is[1-5](-ssl)?\.mzstatic\.com,苹果
 URL-REGEX,^s[1-5]?\.mzstatic\.com,苹果
-#Google
 DOMAIN-SUFFIX,gstatic.com,代理
 DOMAIN-SUFFIX,google.cn,代理
 DOMAIN-SUFFIX,googleapis.com,代理
@@ -39,11 +37,9 @@ DOMAIN-SUFFIX,googlesyndication.com,代理
 DOMAIN-SUFFIX,googletagservices.com,代理
 DOMAIN-SUFFIX,googletagmanager.com,代理
 DOMAIN-SUFFIX,googleusercontent.com,代理
-#PayPal
 DOMAIN-SUFFIX,paypal.com,代理
 DOMAIN-SUFFIX,paypal.me,代理
 DOMAIN-SUFFIX,paypalobjects.com,代理
-#Custom
 DOMAIN-SUFFIX,agemys.com,代理
 GEOIP,CN,DIRECT,no-resolve
 FINAL,代理
