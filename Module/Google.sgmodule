@@ -1,7 +1,0 @@
-#!name=Google重定向
-#!desc=Google重定向
-
-[URL Rewrite]
-^https?://(www.)?g.cn https://www.google.com 302
-^https?://(www.)?google.cn https://www.google.com 302
-^https?://(www.)?google.com.hk https://www.google.com 302
