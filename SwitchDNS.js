@@ -20,7 +20,7 @@ function wifiChanged() {
 }
 
 const ssid = "Slotheve";
-const name = "DNS";
+const name = "RewriteDNS";
 let home = ($network.wifi.ssid === ssid);
 
 const getModuleStatus = new Promise((resolve) => {
