@@ -1,11 +1,3 @@
-/*
- * Surge 网络详情
- * 由@Nebulosa-Cat编写
- * 由@Rabbit-Spec翻译
- * 更新日期：2022.08.14
- * 版本：3.1
- */
-
 /**
  * 网络请求封装为 Promise
  * Usage: httpMethod.get(option).then(response => { logger.log(data) }).catch(error => { logger.log(error) })
