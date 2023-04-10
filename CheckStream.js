@@ -1,10 +1,4 @@
-/*
- * 由@LucaLin233编写
- * 原脚本地址：https://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/JS/stream-all.js
- * 由@Rabbit-Spec修改
- * 更新日期：2022.06.26
- * 版本：2.2
- */
+// 原脚本地址：https://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/JS/stream-all.js
 
 const REQUEST_HEADERS = {
     'User-Agent':
