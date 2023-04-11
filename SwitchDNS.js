@@ -1,8 +1,9 @@
 const wifi = 'Slotheve';
+#const current_wifi_ssid = 'current_wifi_ssid';
 
 function wifiChanged() {
-  const changed = $current_wifi_ssid !== $network.wifi.ssid;
-  changed && $persistentStore.write($network.wifi.ssid, $current_wifi_ssid);
+  const changed = current_wifi_ssid !== $network.wifi.ssid;
+  changed && $persistentStore.write($network.wifi.ssid, current_wifi_ssid);
   return changed;
 }
 
