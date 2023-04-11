@@ -1,5 +1,5 @@
 const wifi = 'Slotheve';
-#const current_wifi_ssid = 'current_wifi_ssid';
+const current_wifi_ssid = 'current_wifi_ssid';
 
 function wifiChanged() {
   const changed = current_wifi_ssid !== $network.wifi.ssid;
